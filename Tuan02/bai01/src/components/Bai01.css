@@ -1,0 +1,22 @@
+.input-a {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.input-b {
+    width: 50px;
+}
+
+.input-box {
+    margin-bottom: 10px;
+}
+
+.radio-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-click {
+    background-color: red;
+}

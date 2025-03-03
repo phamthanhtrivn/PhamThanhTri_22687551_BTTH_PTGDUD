@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p style="font-size: 20px; font-weight: bold;">Đoán số từ 1 - 50 (đoán đúng điểm được cộng 5 điểm, đoán sai -trừ 5 điểm)</p>
+
+      <div class="score" style="font-size: 20px;">Score: <span class="scoreNumber">20</span></div>
+
+      <p class="secretNumber" style="font-size: 20px;">?</p>
+
+      <div style="font-size: 20px;">
+        <input type="number" class="guessNumber"/>
+        <button class="guessBtn">Guess</button>
+      </div>
+      <button style="margin-top: 20px;" class="againBtn">Again</button>
+      
+      <div class="message" style="margin-top: 20px; font-size: 16px;">Mời bạn đoán số!</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
