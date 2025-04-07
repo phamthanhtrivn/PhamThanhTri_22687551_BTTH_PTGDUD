@@ -1,6 +1,6 @@
 const Analytics = () => {
     return (
-        <div sclassName="p-5">Analytics</div>
+        <div className="p-5 text-2xl font-bold">Analytics</div>
     )
 }
 

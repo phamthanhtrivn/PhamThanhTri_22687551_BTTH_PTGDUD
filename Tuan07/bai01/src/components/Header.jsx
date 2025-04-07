@@ -7,7 +7,7 @@ const Header = () => {
                 <p className="text-2xl font-bold text-[#E64F84]">Dashboard</p>
                 <div className="flex items-center gap-5">
                     <div className="flex item-center gap-3 bg-[#F3F4F6] px-3 py-1.5 rounded">
-                        <img cl src={images.Search} alt="Search" />
+                        <img src={images.Search} alt="Search" />
                         <input type="text" placeholder="Search..." className="outline-none w-[250px]" />
                     </div>
                     <img src={images.Bell_1} alt="Bell_1" />
@@ -18,7 +18,7 @@ const Header = () => {
             <div className="p-5">
                 <div className="flex items-center gap-3">
                     <img src={images.Squares_four_1} alt="Squares_four_1" />
-                    <p className="text-lg font-bold">Overview</p>
+                    <p className="text-2xl font-bold">Overview</p>
                 </div>
             </div>
             <div className="flex gap-12 p-5">
