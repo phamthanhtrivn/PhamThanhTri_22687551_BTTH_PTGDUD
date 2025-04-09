@@ -55,6 +55,14 @@
       "orderValue": 9000,
       "orderDate": "7/4/2025",
       "status": "In-progress"
+    },
+    {
+      "id": "d8fd",
+      "customerName": "Test Name",
+      "company": "Company Test ",
+      "orderValue": 1500,
+      "orderDate": "9/4/2025",
+      "status": "New"
     }
   ]
 }

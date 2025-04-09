@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { images } from "../assets/assets";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import AddModal from "../components/AddModal";
 import EditModal from "../components/EditModal";
 
 const DashBoard = () => {
@@ -8,6 +9,7 @@ const DashBoard = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const itemPerPage = 6;
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [editModal, setEditModal] = useState(false);
   const [selectedOrderId, setSelectedOrderId] = useState(null);
 
@@ -36,8 +38,8 @@ const DashBoard = () => {
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   const handleEditClick = (id) => {
-    setSelectedOrderId(id); 
-    setEditModal(true); 
+    setSelectedOrderId(id);
+    setEditModal(true);
   };
 
   return (
@@ -49,6 +51,7 @@ const DashBoard = () => {
         </div>
         <div className="flex gap-5">
           <button
+            onClick={() => setIsModalOpen(true)}
             className="cursor-pointer flex items-center gap-3 px-3 py-1.5 text-[#E64F84] border border-[#E64F84] rounded-md"
           >
             <img src={images.Download} alt="Download" />
@@ -130,6 +133,13 @@ const DashBoard = () => {
           </button>
         </div>
       </div>
+      {isModalOpen && (
+        <AddModal
+          fetchOrderData={fetchOrderData}
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
+      )}
       {editModal && selectedOrderId !== null && (
         <EditModal
           fetchOrderData={fetchOrderData}
